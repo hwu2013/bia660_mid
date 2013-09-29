@@ -119,6 +119,16 @@ def request(host, path, url_params, consumer_key, consumer_secret, token, token_
 
   return response
 
+def show_location(loc):
+    print "\t{0},{1},{2}".format(loc["city"],loc["postal_code"],loc["address"][0])
+
+
+
 response = request(options.host, '/v2/search', url_params, options.consumer_key, options.consumer_secret, options.token, options.token_secret)
-print json.dumps(response, sort_keys=True, indent=2)
+for busi in response["businesses"]:
+     print busi["id"]
+     show_location(busi["location"])
+     print "\t"+busi["name"]
+
+#print json.dumps(response, sort_keys=True, indent=2)
 

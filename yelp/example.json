@@ -1,0 +1,829 @@
+URL: http://api.yelp.com/v2/search?term=century+21&location=nj
+Signed URL: http://api.yelp.com/v2/search?oauth_body_hash=2jmj7l5rSw0yVb%2FvlWAYkK%2FYBwk%3D&term=century+21&oauth_nonce=89535944&oauth_timestamp=1380469311&oauth_consumer_key=0pYQvAy9JQoRiZTpEFiPLg&oauth_signature_method=HMAC-SHA1&oauth_token=kTYK94YSSF9jPZiOVvpttf5fZx9PtxAa&location=nj&oauth_signature=Bbm81XeL6%2BzYmsaeWdLGcUVIYII%3D
+
+{
+  "businesses": [
+    {
+      "categories": [
+        [
+          "Department Stores", 
+          "deptstores"
+        ]
+      ], 
+      "display_phone": "+1-212-227-9092", 
+      "id": "century-21-department-store-new-york", 
+      "image_url": "http://s3-media2.ak.yelpcdn.com/bphoto/KwkFvv8fs9Dfh6qCzYtqGA/ms.jpg", 
+      "is_claimed": false, 
+      "is_closed": false, 
+      "location": {
+        "address": [
+          "22 Cortlandt St"
+        ], 
+        "city": "New York", 
+        "country_code": "US", 
+        "cross_streets": "Broadway & Trinity Pl", 
+        "display_address": [
+          "22 Cortlandt St", 
+          "(b/t Broadway & Trinity Pl)", 
+          "Financial District", 
+          "New York, NY 10007"
+        ], 
+        "neighborhoods": [
+          "Financial District"
+        ], 
+        "postal_code": "10007", 
+        "state_code": "NY"
+      }, 
+      "mobile_url": "http://m.yelp.com/biz/century-21-department-store-new-york", 
+      "name": "Century 21 Department Store", 
+      "phone": "2122279092", 
+      "rating": 4.0, 
+      "rating_img_url": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png", 
+      "rating_img_url_large": "http://s3-media2.ak.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png", 
+      "rating_img_url_small": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png", 
+      "review_count": 64, 
+      "snippet_image_url": "http://s3-media2.ak.yelpcdn.com/photo/4h_5t0IUO3EIA-ILj8kYmA/ms.jpg", 
+      "snippet_text": "Positives: \nClose to my job. Relatively inexpensive items. Top brands. Heaps of options.\n\nNegatives: \nHigh concentration of tourists. Most items that I...", 
+      "url": "http://www.yelp.com/biz/century-21-department-store-new-york"
+    }, 
+    {
+      "categories": [
+        [
+          "Department Stores", 
+          "deptstores"
+        ]
+      ], 
+      "display_phone": "+1-212-518-2121", 
+      "id": "century-21-manhattan-2", 
+      "image_url": "http://s3-media1.ak.yelpcdn.com/bphoto/TJNjsziffoljKsSDna7S4Q/ms.jpg", 
+      "is_claimed": false, 
+      "is_closed": false, 
+      "location": {
+        "address": [
+          "1972 Broadway"
+        ], 
+        "city": "Manhattan", 
+        "country_code": "US", 
+        "cross_streets": "66th St & 67th St", 
+        "display_address": [
+          "1972 Broadway", 
+          "(b/t 66th St & 67th St)", 
+          "Upper West Side", 
+          "Manhattan, NY 10023"
+        ], 
+        "neighborhoods": [
+          "Upper West Side"
+        ], 
+        "postal_code": "10023", 
+        "state_code": "NY"
+      }, 
+      "mobile_url": "http://m.yelp.com/biz/century-21-manhattan-2", 
+      "name": "Century 21", 
+      "phone": "2125182121", 
+      "rating": 3.0, 
+      "rating_img_url": "http://s3-media3.ak.yelpcdn.com/assets/2/www/img/34bc8086841c/ico/stars/v1/stars_3.png", 
+      "rating_img_url_large": "http://s3-media1.ak.yelpcdn.com/assets/2/www/img/e8b5b79d37ed/ico/stars/v1/stars_large_3.png", 
+      "rating_img_url_small": "http://s3-media3.ak.yelpcdn.com/assets/2/www/img/902abeed0983/ico/stars/v1/stars_small_3.png", 
+      "review_count": 84, 
+      "snippet_image_url": "http://s3-media3.ak.yelpcdn.com/photo/IvkBXUsaA4MFpreEOTZObw/ms.jpg", 
+      "snippet_text": "I actually like this location!  \n\nWith the Financial District location now monopolized by tourists, I'm glad I was up near Lincoln Center and thought to...", 
+      "url": "http://www.yelp.com/biz/century-21-manhattan-2"
+    }, 
+    {
+      "categories": [
+        [
+          "Department Stores", 
+          "deptstores"
+        ]
+      ], 
+      "display_phone": "+1-212-227-9092", 
+      "id": "century-21-new-york", 
+      "image_url": "http://s3-media1.ak.yelpcdn.com/bphoto/3DuALy3TNHj6mweqR07xsg/ms.jpg", 
+      "is_claimed": true, 
+      "is_closed": false, 
+      "location": {
+        "address": [
+          "22 Cortlandt St"
+        ], 
+        "city": "New York", 
+        "country_code": "US", 
+        "cross_streets": "Broadway & Trinity Pl", 
+        "display_address": [
+          "22 Cortlandt St", 
+          "(b/t Broadway & Trinity Pl)", 
+          "Financial District", 
+          "New York, NY 10007"
+        ], 
+        "neighborhoods": [
+          "Financial District"
+        ], 
+        "postal_code": "10007", 
+        "state_code": "NY"
+      }, 
+      "mobile_url": "http://m.yelp.com/biz/century-21-new-york", 
+      "name": "Century 21", 
+      "phone": "2122279092", 
+      "rating": 3.0, 
+      "rating_img_url": "http://s3-media3.ak.yelpcdn.com/assets/2/www/img/34bc8086841c/ico/stars/v1/stars_3.png", 
+      "rating_img_url_large": "http://s3-media1.ak.yelpcdn.com/assets/2/www/img/e8b5b79d37ed/ico/stars/v1/stars_large_3.png", 
+      "rating_img_url_small": "http://s3-media3.ak.yelpcdn.com/assets/2/www/img/902abeed0983/ico/stars/v1/stars_small_3.png", 
+      "review_count": 729, 
+      "snippet_image_url": "http://s3-media3.ak.yelpcdn.com/photo/9oNMdY6fvJuIo2lgW9wSsw/ms.jpg", 
+      "snippet_text": "Popped in here for a suit yesterday, and although it is ALWAYS mobbed with tourists (you have to be nimble on your feet to get around them), there are...", 
+      "url": "http://www.yelp.com/biz/century-21-new-york"
+    }, 
+    {
+      "categories": [
+        [
+          "Department Stores", 
+          "deptstores"
+        ]
+      ], 
+      "display_phone": "+1-718-748-3266", 
+      "id": "century-21-brooklyn", 
+      "image_url": "http://s3-media4.ak.yelpcdn.com/bphoto/-xVra0yHieZYNaIGnl3S3Q/ms.jpg", 
+      "is_claimed": true, 
+      "is_closed": false, 
+      "location": {
+        "address": [
+          "472 86th St"
+        ], 
+        "city": "Brooklyn", 
+        "country_code": "US", 
+        "cross_streets": "4th Ave & 5th Ave", 
+        "display_address": [
+          "472 86th St", 
+          "(b/t 4th Ave & 5th Ave)", 
+          "Bay Ridge", 
+          "Brooklyn, NY 11209"
+        ], 
+        "neighborhoods": [
+          "Bay Ridge"
+        ], 
+        "postal_code": "11209", 
+        "state_code": "NY"
+      }, 
+      "mobile_url": "http://m.yelp.com/biz/century-21-brooklyn", 
+      "name": "Century 21", 
+      "phone": "7187483266", 
+      "rating": 3.5, 
+      "rating_img_url": "http://s3-media1.ak.yelpcdn.com/assets/2/www/img/5ef3eb3cb162/ico/stars/v1/stars_3_half.png", 
+      "rating_img_url_large": "http://s3-media3.ak.yelpcdn.com/assets/2/www/img/bd9b7a815d1b/ico/stars/v1/stars_large_3_half.png", 
+      "rating_img_url_small": "http://s3-media1.ak.yelpcdn.com/assets/2/www/img/2e909d5d3536/ico/stars/v1/stars_small_3_half.png", 
+      "review_count": 112, 
+      "snippet_image_url": "http://s3-media2.ak.yelpcdn.com/photo/mQMxLzWgHFZHWDOYHj9F_w/ms.jpg", 
+      "snippet_text": "'Love love love the place!", 
+      "url": "http://www.yelp.com/biz/century-21-brooklyn"
+    }, 
+    {
+      "categories": [
+        [
+          "Department Stores", 
+          "deptstores"
+        ]
+      ], 
+      "display_phone": "+1-201-348-2252", 
+      "id": "century-21-department-store-secaucus", 
+      "is_claimed": false, 
+      "is_closed": false, 
+      "location": {
+        "address": [
+          "70 Enterprise Ave N"
+        ], 
+        "city": "Secaucus", 
+        "country_code": "US", 
+        "display_address": [
+          "70 Enterprise Ave N", 
+          "Secaucus, NJ 07094"
+        ], 
+        "postal_code": "07094", 
+        "state_code": "NJ"
+      }, 
+      "mobile_url": "http://m.yelp.com/biz/century-21-department-store-secaucus", 
+      "name": "Century 21 Department Store", 
+      "phone": "2013482252", 
+      "rating": 3.0, 
+      "rating_img_url": "http://s3-media3.ak.yelpcdn.com/assets/2/www/img/34bc8086841c/ico/stars/v1/stars_3.png", 
+      "rating_img_url_large": "http://s3-media1.ak.yelpcdn.com/assets/2/www/img/e8b5b79d37ed/ico/stars/v1/stars_large_3.png", 
+      "rating_img_url_small": "http://s3-media3.ak.yelpcdn.com/assets/2/www/img/902abeed0983/ico/stars/v1/stars_small_3.png", 
+      "review_count": 7, 
+      "snippet_image_url": "http://s3-media1.ak.yelpcdn.com/photo/4BjNDcqxbP3PtWKL-UZFxQ/ms.jpg", 
+      "snippet_text": "I've never been a big fan only because its always so crowded!!", 
+      "url": "http://www.yelp.com/biz/century-21-department-store-secaucus"
+    }, 
+    {
+      "categories": [
+        [
+          "Real Estate Services", 
+          "realestatesvcs"
+        ]
+      ], 
+      "display_phone": "+1-201-792-7601", 
+      "id": "century-21-innovative-realty-hoboken", 
+      "is_claimed": true, 
+      "is_closed": false, 
+      "location": {
+        "address": [
+          "220 Washington St"
+        ], 
+        "city": "Hoboken", 
+        "country_code": "US", 
+        "display_address": [
+          "220 Washington St", 
+          "Hoboken, NJ 07030"
+        ], 
+        "postal_code": "07030", 
+        "state_code": "NJ"
+      }, 
+      "mobile_url": "http://m.yelp.com/biz/century-21-innovative-realty-hoboken", 
+      "name": "Century 21 Innovative Realty", 
+      "phone": "2017927601", 
+      "rating": 5.0, 
+      "rating_img_url": "http://s3-media1.ak.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png", 
+      "rating_img_url_large": "http://s3-media3.ak.yelpcdn.com/assets/2/www/img/22affc4e6c38/ico/stars/v1/stars_large_5.png", 
+      "rating_img_url_small": "http://s3-media1.ak.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png", 
+      "review_count": 10, 
+      "snippet_image_url": "http://s3-media4.ak.yelpcdn.com/photo/8-qiPUJey0itbFci6kiLGA/ms.jpg", 
+      "snippet_text": "We had a GREAT experience working with Lori Staselis. She found us our dream apartment quickly and was wonderful to work with - didn't try to \"sell\" us on...", 
+      "url": "http://www.yelp.com/biz/century-21-innovative-realty-hoboken"
+    }, 
+    {
+      "categories": [
+        [
+          "Department Stores", 
+          "deptstores"
+        ]
+      ], 
+      "display_phone": "+1-718-748-3266", 
+      "id": "century-21-dept-stores-brooklyn", 
+      "is_claimed": false, 
+      "is_closed": false, 
+      "location": {
+        "address": [
+          "478 86th Street"
+        ], 
+        "city": "Brooklyn", 
+        "country_code": "US", 
+        "display_address": [
+          "478 86th Street", 
+          "Bay Ridge", 
+          "Brooklyn, NY 11209"
+        ], 
+        "neighborhoods": [
+          "Bay Ridge"
+        ], 
+        "postal_code": "11209", 
+        "state_code": "NY"
+      }, 
+      "mobile_url": "http://m.yelp.com/biz/century-21-dept-stores-brooklyn", 
+      "name": "Century 21 Dept Stores", 
+      "phone": "7187483266", 
+      "rating": 3.0, 
+      "rating_img_url": "http://s3-media3.ak.yelpcdn.com/assets/2/www/img/34bc8086841c/ico/stars/v1/stars_3.png", 
+      "rating_img_url_large": "http://s3-media1.ak.yelpcdn.com/assets/2/www/img/e8b5b79d37ed/ico/stars/v1/stars_large_3.png", 
+      "rating_img_url_small": "http://s3-media3.ak.yelpcdn.com/assets/2/www/img/902abeed0983/ico/stars/v1/stars_small_3.png", 
+      "review_count": 4, 
+      "snippet_image_url": "http://s3-media2.ak.yelpcdn.com/photo/nWgNqvV7iutQvaXFDfv9eQ/ms.jpg", 
+      "snippet_text": "Hands down, this is the best C21 store in the five boroughs.  AMAZING women's shoe floor.  Amazing home section.  I will go there looking for workout...", 
+      "url": "http://www.yelp.com/biz/century-21-dept-stores-brooklyn"
+    }, 
+    {
+      "display_phone": "+1-908-686-4444", 
+      "id": "21st-century-leasing-union", 
+      "is_claimed": false, 
+      "is_closed": false, 
+      "location": {
+        "address": [
+          "595 Chestnut St"
+        ], 
+        "city": "Union", 
+        "country_code": "US", 
+        "display_address": [
+          "595 Chestnut St", 
+          "Union, NJ 07083"
+        ], 
+        "postal_code": "07083", 
+        "state_code": "NJ"
+      }, 
+      "mobile_url": "http://m.yelp.com/biz/21st-century-leasing-union", 
+      "name": "21st Century Leasing", 
+      "phone": "9086864444", 
+      "rating": 2.0, 
+      "rating_img_url": "http://s3-media2.ak.yelpcdn.com/assets/2/www/img/b561c24f8341/ico/stars/v1/stars_2.png", 
+      "rating_img_url_large": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/c00926ee5dcb/ico/stars/v1/stars_large_2.png", 
+      "rating_img_url_small": "http://s3-media2.ak.yelpcdn.com/assets/2/www/img/a6210baec261/ico/stars/v1/stars_small_2.png", 
+      "review_count": 1, 
+      "snippet_image_url": "http://s3-media3.ak.yelpcdn.com/photo/SqVnDEDJqkuNRqcYHOgmUQ/ms.jpg", 
+      "snippet_text": "Worst after purchase service we've ever experienced!\n\nClean cars, good deals but bad service", 
+      "url": "http://www.yelp.com/biz/21st-century-leasing-union"
+    }, 
+    {
+      "categories": [
+        [
+          "Car Dealers", 
+          "car_dealers"
+        ]
+      ], 
+      "display_phone": "+1-908-360-9944", 
+      "id": "21st-century-auto-group-springfield", 
+      "image_url": "http://s3-media2.ak.yelpcdn.com/bphoto/Ntk1PcqFj7jjgt50MlMPeA/ms.jpg", 
+      "is_claimed": true, 
+      "is_closed": false, 
+      "location": {
+        "address": [
+          "305 US Hwy 22 E"
+        ], 
+        "city": "Springfield", 
+        "country_code": "US", 
+        "display_address": [
+          "305 US Hwy 22 E", 
+          "Springfield, NJ 07081"
+        ], 
+        "postal_code": "07081", 
+        "state_code": "NJ"
+      }, 
+      "mobile_url": "http://m.yelp.com/biz/21st-century-auto-group-springfield", 
+      "name": "21st Century Auto Group", 
+      "phone": "9083609944", 
+      "rating": 1.5, 
+      "rating_img_url": "http://s3-media3.ak.yelpcdn.com/assets/2/www/img/11e62fee886f/ico/stars/v1/stars_1_half.png", 
+      "rating_img_url_large": "http://s3-media1.ak.yelpcdn.com/assets/2/www/img/4b88f27b8b84/ico/stars/v1/stars_large_1_half.png", 
+      "rating_img_url_small": "http://s3-media3.ak.yelpcdn.com/assets/2/www/img/edfabe6dfcec/ico/stars/v1/stars_small_1_half.png", 
+      "review_count": 14, 
+      "snippet_image_url": "http://s3-media4.ak.yelpcdn.com/photo/zyN6A-nOaFjdB6YsG80YQw/ms.jpg", 
+      "snippet_text": "Great experience at 21st Century Auto Group!\n\nI have purchased a car from them in the past and I was very happy satisfied with their service.  I was...", 
+      "url": "http://www.yelp.com/biz/21st-century-auto-group-springfield"
+    }, 
+    {
+      "categories": [
+        [
+          "Real Estate Services", 
+          "realestatesvcs"
+        ], 
+        [
+          "Real Estate Agents", 
+          "realestateagents"
+        ]
+      ], 
+      "display_phone": "+1-973-376-9393", 
+      "id": "norma-altman-realtors-century-21-millburn", 
+      "image_url": "http://s3-media1.ak.yelpcdn.com/bphoto/JhiSGagn-595DozlhE2ZFA/ms.jpg", 
+      "is_claimed": true, 
+      "is_closed": false, 
+      "location": {
+        "address": [
+          "221 Main St"
+        ], 
+        "city": "Millburn", 
+        "country_code": "US", 
+        "display_address": [
+          "221 Main St", 
+          "Millburn, NJ 07041"
+        ], 
+        "postal_code": "07041", 
+        "state_code": "NJ"
+      }, 
+      "mobile_url": "http://m.yelp.com/biz/norma-altman-realtors-century-21-millburn", 
+      "name": "Norma Altman Realtors - Century 21", 
+      "phone": "9733769393", 
+      "rating": 5.0, 
+      "rating_img_url": "http://s3-media1.ak.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png", 
+      "rating_img_url_large": "http://s3-media3.ak.yelpcdn.com/assets/2/www/img/22affc4e6c38/ico/stars/v1/stars_large_5.png", 
+      "rating_img_url_small": "http://s3-media1.ak.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png", 
+      "review_count": 1, 
+      "snippet_image_url": "http://s3-media1.ak.yelpcdn.com/photo/Mr8Od7YDfZYMx-q171EkdA/ms.jpg", 
+      "snippet_text": "Norma Altman Realtors was a life saver for us with Realtor Hope Rosenberg a blessing for our family.  We relocated from DC to NJ on a tight budget and...", 
+      "url": "http://www.yelp.com/biz/norma-altman-realtors-century-21-millburn"
+    }, 
+    {
+      "categories": [
+        [
+          "Real Estate Agents", 
+          "realestateagents"
+        ], 
+        [
+          "Real Estate Services", 
+          "realestatesvcs"
+        ]
+      ], 
+      "display_phone": "+1-718-727-6900", 
+      "id": "century-21-papp-realty-staten-island-2", 
+      "image_url": "http://s3-media1.ak.yelpcdn.com/bphoto/Lrw-akJXmnlTR5Hl3k4lKQ/ms.jpg", 
+      "is_claimed": false, 
+      "is_closed": false, 
+      "location": {
+        "address": [
+          "1741 Victory Boulevard"
+        ], 
+        "city": "Staten Island", 
+        "country_code": "US", 
+        "display_address": [
+          "1741 Victory Boulevard", 
+          "Staten Island, NY 10314"
+        ], 
+        "postal_code": "10314", 
+        "state_code": "NY"
+      }, 
+      "mobile_url": "http://m.yelp.com/biz/century-21-papp-realty-staten-island-2", 
+      "name": "Century 21 Papp Realty", 
+      "phone": "7187276900", 
+      "rating": 1.0, 
+      "rating_img_url": "http://s3-media1.ak.yelpcdn.com/assets/2/www/img/f64056afac01/ico/stars/v1/stars_1.png", 
+      "rating_img_url_large": "http://s3-media3.ak.yelpcdn.com/assets/2/www/img/cc5d90a21966/ico/stars/v1/stars_large_1.png", 
+      "rating_img_url_small": "http://s3-media1.ak.yelpcdn.com/assets/2/www/img/74cb12ae7253/ico/stars/v1/stars_small_1.png", 
+      "review_count": 1, 
+      "snippet_image_url": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/cc4afe21892e/default_avatars/user_medium_square.png", 
+      "snippet_text": "Was looking for help finding a moving company. This review is only about the service I received through the receptionist, not through the real estate staff....", 
+      "url": "http://www.yelp.com/biz/century-21-papp-realty-staten-island-2"
+    }, 
+    {
+      "categories": [
+        [
+          "Real Estate Agents", 
+          "realestateagents"
+        ], 
+        [
+          "Real Estate Services", 
+          "realestatesvcs"
+        ]
+      ], 
+      "display_phone": "+1-718-921-0004", 
+      "id": "century-21-demasi-realty-brooklyn", 
+      "is_claimed": false, 
+      "is_closed": false, 
+      "location": {
+        "address": [
+          "8906 3rd Ave"
+        ], 
+        "city": "Brooklyn", 
+        "country_code": "US", 
+        "cross_streets": "89th St & 90th St", 
+        "display_address": [
+          "8906 3rd Ave", 
+          "(b/t 89th St & 90th St)", 
+          "Bay Ridge", 
+          "Brooklyn, NY 11209"
+        ], 
+        "neighborhoods": [
+          "Bay Ridge", 
+          "Fort Hamilton"
+        ], 
+        "postal_code": "11209", 
+        "state_code": "NY"
+      }, 
+      "mobile_url": "http://m.yelp.com/biz/century-21-demasi-realty-brooklyn", 
+      "name": "Century 21 Demasi Realty", 
+      "phone": "7189210004", 
+      "rating": 3.0, 
+      "rating_img_url": "http://s3-media3.ak.yelpcdn.com/assets/2/www/img/34bc8086841c/ico/stars/v1/stars_3.png", 
+      "rating_img_url_large": "http://s3-media1.ak.yelpcdn.com/assets/2/www/img/e8b5b79d37ed/ico/stars/v1/stars_large_3.png", 
+      "rating_img_url_small": "http://s3-media3.ak.yelpcdn.com/assets/2/www/img/902abeed0983/ico/stars/v1/stars_small_3.png", 
+      "review_count": 1, 
+      "snippet_image_url": "http://s3-media2.ak.yelpcdn.com/photo/bDgF9U2FHUAF0CokCI3MHg/ms.jpg", 
+      "snippet_text": "This is where I went when I got the apartment I currently live in.  The agent was very friendly and was very patient in showing me different apartments....", 
+      "url": "http://www.yelp.com/biz/century-21-demasi-realty-brooklyn"
+    }, 
+    {
+      "categories": [
+        [
+          "Real Estate Services", 
+          "realestatesvcs"
+        ]
+      ], 
+      "display_phone": "+1-201-938-0600", 
+      "id": "century-21-viewpoint-realty-jersey-city-2", 
+      "is_claimed": false, 
+      "is_closed": false, 
+      "location": {
+        "address": [
+          "304 Grove St"
+        ], 
+        "city": "Jersey City", 
+        "country_code": "US", 
+        "display_address": [
+          "304 Grove St", 
+          "Jersey City, NJ 07302"
+        ], 
+        "postal_code": "07302", 
+        "state_code": "NJ"
+      }, 
+      "mobile_url": "http://m.yelp.com/biz/century-21-viewpoint-realty-jersey-city-2", 
+      "name": "Century 21 Viewpoint Realty", 
+      "phone": "2019380600", 
+      "rating": 1.0, 
+      "rating_img_url": "http://s3-media1.ak.yelpcdn.com/assets/2/www/img/f64056afac01/ico/stars/v1/stars_1.png", 
+      "rating_img_url_large": "http://s3-media3.ak.yelpcdn.com/assets/2/www/img/cc5d90a21966/ico/stars/v1/stars_large_1.png", 
+      "rating_img_url_small": "http://s3-media1.ak.yelpcdn.com/assets/2/www/img/74cb12ae7253/ico/stars/v1/stars_small_1.png", 
+      "review_count": 1, 
+      "snippet_image_url": "http://s3-media1.ak.yelpcdn.com/photo/YpFkf5fkpHp-mnA9F9Fg_A/ms.jpg", 
+      "snippet_text": "Do not go here unless you like people who don't care to help you when you have problems with your home sale. They only get involved to get  your payment...", 
+      "url": "http://www.yelp.com/biz/century-21-viewpoint-realty-jersey-city-2"
+    }, 
+    {
+      "categories": [
+        [
+          "Real Estate Agents", 
+          "realestateagents"
+        ]
+      ], 
+      "display_phone": "+1-718-768-4500", 
+      "id": "century-21-brooklyn-2", 
+      "image_url": "http://s3-media4.ak.yelpcdn.com/bphoto/C7-ZMghw5U-PXnpnxPv6KQ/ms.jpg", 
+      "is_claimed": true, 
+      "is_closed": false, 
+      "location": {
+        "address": [
+          "715 5th Ave"
+        ], 
+        "city": "Brooklyn", 
+        "country_code": "US", 
+        "cross_streets": "22nd St & 23rd St", 
+        "display_address": [
+          "715 5th Ave", 
+          "(b/t 22nd St & 23rd St)", 
+          "South Slope", 
+          "Brooklyn, NY 11215"
+        ], 
+        "neighborhoods": [
+          "South Slope"
+        ], 
+        "postal_code": "11215", 
+        "state_code": "NY"
+      }, 
+      "mobile_url": "http://m.yelp.com/biz/century-21-brooklyn-2", 
+      "name": "Century 21", 
+      "phone": "7187684500", 
+      "rating": 1.0, 
+      "rating_img_url": "http://s3-media1.ak.yelpcdn.com/assets/2/www/img/f64056afac01/ico/stars/v1/stars_1.png", 
+      "rating_img_url_large": "http://s3-media3.ak.yelpcdn.com/assets/2/www/img/cc5d90a21966/ico/stars/v1/stars_large_1.png", 
+      "rating_img_url_small": "http://s3-media1.ak.yelpcdn.com/assets/2/www/img/74cb12ae7253/ico/stars/v1/stars_small_1.png", 
+      "review_count": 1, 
+      "snippet_image_url": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/cc4afe21892e/default_avatars/user_medium_square.png", 
+      "snippet_text": "if I could i would give this place negative star! Worse renting experience of my life! Specially Ali and all his brother...these ppl do absolutely nothing,...", 
+      "url": "http://www.yelp.com/biz/century-21-brooklyn-2"
+    }, 
+    {
+      "display_phone": "+1-212-489-7044", 
+      "id": "21st-century-gourmet-deli-new-york", 
+      "image_url": "http://s3-media4.ak.yelpcdn.com/bphoto/lGoKPme7mv75OCEKF_GJYQ/ms.jpg", 
+      "is_claimed": false, 
+      "is_closed": false, 
+      "location": {
+        "address": [
+          "686 10th Avenue"
+        ], 
+        "city": "New York", 
+        "country_code": "US", 
+        "cross_streets": "48th St & 49th St", 
+        "display_address": [
+          "686 10th Avenue", 
+          "(b/t 48th St & 49th St)", 
+          "Hell's Kitchen", 
+          "New York, NY 10019"
+        ], 
+        "neighborhoods": [
+          "Hell's Kitchen", 
+          "Midtown West"
+        ], 
+        "postal_code": "10019", 
+        "state_code": "NY"
+      }, 
+      "mobile_url": "http://m.yelp.com/biz/21st-century-gourmet-deli-new-york", 
+      "name": "21st Century Gourmet Deli", 
+      "phone": "2124897044", 
+      "rating": 3.5, 
+      "rating_img_url": "http://s3-media1.ak.yelpcdn.com/assets/2/www/img/5ef3eb3cb162/ico/stars/v1/stars_3_half.png", 
+      "rating_img_url_large": "http://s3-media3.ak.yelpcdn.com/assets/2/www/img/bd9b7a815d1b/ico/stars/v1/stars_large_3_half.png", 
+      "rating_img_url_small": "http://s3-media1.ak.yelpcdn.com/assets/2/www/img/2e909d5d3536/ico/stars/v1/stars_small_3_half.png", 
+      "review_count": 3, 
+      "snippet_image_url": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/cc4afe21892e/default_avatars/user_medium_square.png", 
+      "snippet_text": "Great sandwiches! Especially the classic Italian. Shortys the man! Great customer service as well.", 
+      "url": "http://www.yelp.com/biz/21st-century-gourmet-deli-new-york"
+    }, 
+    {
+      "categories": [
+        [
+          "Department Stores", 
+          "deptstores"
+        ]
+      ], 
+      "display_phone": "+1-212-587-8459", 
+      "id": "tj-maxx-new-york-4", 
+      "image_url": "http://s3-media1.ak.yelpcdn.com/bphoto/Zd6J4diGC5F2YwOh_LSHLA/ms.jpg", 
+      "is_claimed": false, 
+      "is_closed": false, 
+      "location": {
+        "address": [
+          "14 Wall St"
+        ], 
+        "city": "New York", 
+        "country_code": "US", 
+        "cross_streets": "New St & Nassau St", 
+        "display_address": [
+          "14 Wall St", 
+          "(b/t New St & Nassau St)", 
+          "Financial District", 
+          "New York, NY 10005"
+        ], 
+        "neighborhoods": [
+          "Financial District"
+        ], 
+        "postal_code": "10005", 
+        "state_code": "NY"
+      }, 
+      "mobile_url": "http://m.yelp.com/biz/tj-maxx-new-york-4", 
+      "name": "TJ Maxx", 
+      "phone": "2125878459", 
+      "rating": 3.0, 
+      "rating_img_url": "http://s3-media3.ak.yelpcdn.com/assets/2/www/img/34bc8086841c/ico/stars/v1/stars_3.png", 
+      "rating_img_url_large": "http://s3-media1.ak.yelpcdn.com/assets/2/www/img/e8b5b79d37ed/ico/stars/v1/stars_large_3.png", 
+      "rating_img_url_small": "http://s3-media3.ak.yelpcdn.com/assets/2/www/img/902abeed0983/ico/stars/v1/stars_small_3.png", 
+      "review_count": 16, 
+      "snippet_image_url": "http://s3-media1.ak.yelpcdn.com/photo/1Ah7B_kUb82huQbc4wkumw/ms.jpg", 
+      "snippet_text": "I was so pleased with my experience that I'm somewhat reluctant to share it in fear that mobs of tourists will also find this place. The Financial District...", 
+      "url": "http://www.yelp.com/biz/tj-maxx-new-york-4"
+    }, 
+    {
+      "categories": [
+        [
+          "Department Stores", 
+          "deptstores"
+        ]
+      ], 
+      "display_phone": "+1-212-352-0856", 
+      "id": "loehmanns-new-york", 
+      "image_url": "http://s3-media2.ak.yelpcdn.com/bphoto/PJltlktttlgCIavkvt8aUw/ms.jpg", 
+      "is_claimed": true, 
+      "is_closed": false, 
+      "location": {
+        "address": [
+          "101 7th Ave"
+        ], 
+        "city": "New York", 
+        "country_code": "US", 
+        "cross_streets": "17th St & 16th St", 
+        "display_address": [
+          "101 7th Ave", 
+          "(b/t 17th St & 16th St)", 
+          "Chelsea", 
+          "New York, NY 10011"
+        ], 
+        "neighborhoods": [
+          "Chelsea"
+        ], 
+        "postal_code": "10011", 
+        "state_code": "NY"
+      }, 
+      "mobile_url": "http://m.yelp.com/biz/loehmanns-new-york", 
+      "name": "Loehmann's", 
+      "phone": "2123520856", 
+      "rating": 3.5, 
+      "rating_img_url": "http://s3-media1.ak.yelpcdn.com/assets/2/www/img/5ef3eb3cb162/ico/stars/v1/stars_3_half.png", 
+      "rating_img_url_large": "http://s3-media3.ak.yelpcdn.com/assets/2/www/img/bd9b7a815d1b/ico/stars/v1/stars_large_3_half.png", 
+      "rating_img_url_small": "http://s3-media1.ak.yelpcdn.com/assets/2/www/img/2e909d5d3536/ico/stars/v1/stars_small_3_half.png", 
+      "review_count": 117, 
+      "snippet_image_url": "http://s3-media3.ak.yelpcdn.com/photo/wtAwsEJGrKYgHF6SBHSM7A/ms.jpg", 
+      "snippet_text": "Oh my goodness I fell in love! I happened upon Loehmann's today, and I don't think I'll ever shop anywhere again. I'm truly spoiled by the low prices! It...", 
+      "url": "http://www.yelp.com/biz/loehmanns-new-york"
+    }, 
+    {
+      "categories": [
+        [
+          "Department Stores", 
+          "deptstores"
+        ]
+      ], 
+      "display_phone": "+1-212-220-2080", 
+      "id": "nordstrom-rack-new-york", 
+      "image_url": "http://s3-media2.ak.yelpcdn.com/bphoto/rjYc_KdO49vtRydMSFknXw/ms.jpg", 
+      "is_claimed": false, 
+      "is_closed": false, 
+      "location": {
+        "address": [
+          "60 E 14th St"
+        ], 
+        "city": "New York", 
+        "country_code": "US", 
+        "cross_streets": "5th Ave & University Pl", 
+        "display_address": [
+          "60 E 14th St", 
+          "(b/t 5th Ave & University Pl)", 
+          "Flatiron", 
+          "New York, NY 10003"
+        ], 
+        "neighborhoods": [
+          "Flatiron", 
+          "Union Square", 
+          "Gramercy", 
+          "East Village", 
+          "Greenwich Village"
+        ], 
+        "postal_code": "10003", 
+        "state_code": "NY"
+      }, 
+      "mobile_url": "http://m.yelp.com/biz/nordstrom-rack-new-york", 
+      "name": "Nordstrom Rack", 
+      "phone": "2122202080", 
+      "rating": 3.5, 
+      "rating_img_url": "http://s3-media1.ak.yelpcdn.com/assets/2/www/img/5ef3eb3cb162/ico/stars/v1/stars_3_half.png", 
+      "rating_img_url_large": "http://s3-media3.ak.yelpcdn.com/assets/2/www/img/bd9b7a815d1b/ico/stars/v1/stars_large_3_half.png", 
+      "rating_img_url_small": "http://s3-media1.ak.yelpcdn.com/assets/2/www/img/2e909d5d3536/ico/stars/v1/stars_small_3_half.png", 
+      "review_count": 125, 
+      "snippet_image_url": "http://s3-media3.ak.yelpcdn.com/photo/Y3uDjstGvbGWOsCJaXhfDQ/ms.jpg", 
+      "snippet_text": "Love this place! They always have designer shoes, purses and dresses for excellent prices. They can't really compete with Century 21 prices, but than again...", 
+      "url": "http://www.yelp.com/biz/nordstrom-rack-new-york"
+    }, 
+    {
+      "categories": [
+        [
+          "Department Stores", 
+          "deptstores"
+        ]
+      ], 
+      "display_phone": "+1-973-837-1330", 
+      "id": "homegoods-wayne", 
+      "image_url": "http://s3-media4.ak.yelpcdn.com/bphoto/YFbxaNm7FV2e0eiO5e897A/ms.jpg", 
+      "is_claimed": false, 
+      "is_closed": false, 
+      "location": {
+        "address": [
+          "State Hwy 23 N"
+        ], 
+        "city": "Wayne", 
+        "country_code": "US", 
+        "display_address": [
+          "State Hwy 23 N", 
+          "Wayne, NJ 07470"
+        ], 
+        "postal_code": "07470", 
+        "state_code": "NJ"
+      }, 
+      "mobile_url": "http://m.yelp.com/biz/homegoods-wayne", 
+      "name": "Homegoods", 
+      "phone": "9738371330", 
+      "rating": 3.5, 
+      "rating_img_url": "http://s3-media1.ak.yelpcdn.com/assets/2/www/img/5ef3eb3cb162/ico/stars/v1/stars_3_half.png", 
+      "rating_img_url_large": "http://s3-media3.ak.yelpcdn.com/assets/2/www/img/bd9b7a815d1b/ico/stars/v1/stars_large_3_half.png", 
+      "rating_img_url_small": "http://s3-media1.ak.yelpcdn.com/assets/2/www/img/2e909d5d3536/ico/stars/v1/stars_small_3_half.png", 
+      "review_count": 5, 
+      "snippet_image_url": "http://s3-media1.ak.yelpcdn.com/photo/HKYG3ucKBrqX8JOcuMc93A/ms.jpg", 
+      "snippet_text": "This particular Home Goods location is pretty awesome. It's smaller  than the one that everyone seems to favor (the Secaucus branch), but it's PACKED with...", 
+      "url": "http://www.yelp.com/biz/homegoods-wayne"
+    }, 
+    {
+      "categories": [
+        [
+          "Department Stores", 
+          "deptstores"
+        ]
+      ], 
+      "display_phone": "+1-212-233-0607", 
+      "id": "lot-less-closeouts-new-york-3", 
+      "image_url": "http://s3-media4.ak.yelpcdn.com/bphoto/cn3hugb9_w3R-sAVAiIWIg/ms.jpg", 
+      "is_claimed": true, 
+      "is_closed": false, 
+      "location": {
+        "address": [
+          "97 Chambers St"
+        ], 
+        "city": "New York", 
+        "country_code": "US", 
+        "cross_streets": "Broadway & Church St", 
+        "display_address": [
+          "97 Chambers St", 
+          "(b/t Broadway & Church St)", 
+          "TriBeCa", 
+          "New York, NY 10007"
+        ], 
+        "neighborhoods": [
+          "TriBeCa", 
+          "Civic Center"
+        ], 
+        "postal_code": "10007", 
+        "state_code": "NY"
+      }, 
+      "mobile_url": "http://m.yelp.com/biz/lot-less-closeouts-new-york-3", 
+      "name": "Lot Less Closeouts", 
+      "phone": "2122330607", 
+      "rating": 4.0, 
+      "rating_img_url": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png", 
+      "rating_img_url_large": "http://s3-media2.ak.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png", 
+      "rating_img_url_small": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png", 
+      "review_count": 33, 
+      "snippet_image_url": "http://s3-media3.ak.yelpcdn.com/photo/Nbc0i9Q6KOpvTHuq81Feaw/ms.jpg", 
+      "snippet_text": "I have affectionately dubbed Lot Less \"The Garbage Store\" but the moniker is a bit harsh.  What I mean is that the items are so cheap, they're practically...", 
+      "url": "http://www.yelp.com/biz/lot-less-closeouts-new-york-3"
+    }
+  ], 
+  "region": {
+    "center": {
+      "latitude": 40.7519818601383, 
+      "longitude": -74.15590701314545
+    }, 
+    "span": {
+      "latitude_delta": 0.3048954923042544, 
+      "longitude_delta": 0.3823874710800226
+    }
+  }, 
+  "total": 43
+}
