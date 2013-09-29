@@ -12,13 +12,15 @@ t = Twitter(auth=OAuth(OAUTH_TOKEN,OAUTH_SECRET,CONSUMER_TOKEN,CONSUMER_SECRET))
 
 # <codecell>
 
-jstr = t.statuses.retweets_of_me()
+#jstr = t.statuses.retweets_of_me()
+search_result = t.search.tweets(q="%40twitterapi",lang="en",count = 20)
 
 # <codecell>
 
-for tweet in jstr:
-    print tweet['text']
-
+#print search_result;
+for tweet in search_result["statuses"]:
+    if "text" in tweet:
+        print tweet['text']
 # <codecell>
 
 
