@@ -5,6 +5,7 @@ import oauth2
 import optparse
 import urllib
 import urllib2
+import sys
 
 parser = optparse.OptionParser()
 """
@@ -120,15 +121,37 @@ def request(host, path, url_params, consumer_key, consumer_secret, token, token_
   return response
 
 def show_location(loc):
-    print "\t{0},{1},{2}".format(loc["city"],loc["postal_code"],loc["address"][0])
+    print "\tlocation:   {0},{1},{2}".format(loc["city"],loc["postal_code"],loc["address"][0])
+
+def show_cate(cate):
+    sys.stdout.write("\tCategories:")
+    for elem in cate:
+        for subelem in elem:
+            sys.stdout.write(subelem);
+            sys.stdout.write(",")
+    sys.stdout.write("\n")
+
+def show_neighbor(nb):
+    sys.stdout.write("\tNeighbors:   ")
+    for elem in nb:
+        sys.stdout.write(elem);
+        sys.stdout.write(",")
+    sys.stdout.write("\n")
 
 
 
 response = request(options.host, '/v2/search', url_params, options.consumer_key, options.consumer_secret, options.token, options.token_secret)
+cnt = 1;
 for busi in response["businesses"]:
-     print busi["id"]
+     print "#{0}---{1}".format(cnt,busi["id"])
+     cnt += 1
+     if "categories" in busi:
+         show_cate(busi["categories"])
      show_location(busi["location"])
-     print "\t"+busi["name"]
+     print "\tname:      {0}, rating:{1}, review_count:{2}".format(busi["name"],busi["rating"],busi["review_count"])
+     if "neighborhoods" in busi["location"]:
+         show_neighbor(busi["location"]["neighborhoods"])
+     print "\tcomment:   {0}:".format(busi["snippet_text"])
 
 #print json.dumps(response, sort_keys=True, indent=2)
 

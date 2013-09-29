@@ -18,5 +18,5 @@ Search for `bars` in `sf`:
 
 Lookup business information for `yelp-san-francisco` (Yelp):
 
-	python business.py --consumer_key="CONSUMER_KEY" --consumer_secret="CONSUMER_SECRET" \
-	--token="TOKEN" --token_secret="TOKEN_SECRET" --id="yelp-san-francisco"
+	python business.py --consumer_key="0pYQvAy9JQoRiZTpEFiPLg" --consumer_secret="-01DmjuOQeHjQdRJnUWvuRe1pz0" \
+	--token="kTYK94YSSF9jPZiOVvpttf5fZx9PtxAa" --token_secret="LrRVEVOIpnZ6CGwFKEHCz9W0-xA" --id="yelp-san-francisco"

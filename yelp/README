@@ -1,2 +1,5 @@
+./main.py --location="nj" --term="century 21"  --limit="20"
+
+#use yelp_api
 use http://jsonviewer.stack.hu/ to check json output
 
