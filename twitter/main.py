@@ -13,7 +13,7 @@ t = Twitter(auth=OAuth(OAUTH_TOKEN,OAUTH_SECRET,CONSUMER_TOKEN,CONSUMER_SECRET))
 # <codecell>
 
 #jstr = t.statuses.retweets_of_me()
-search_result = t.search.tweets(q="%40twitterapi",lang="en",count = 20)
+search_result = t.search.tweets(q="century 21 :(",lang="en",count = 20)
 
 # <codecell>
 

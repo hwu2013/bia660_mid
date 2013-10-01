@@ -58,6 +58,8 @@ if not options.location and not options.bounds and not options.point:
 
 # Setup URL params from options
 url_params = {}
+if options.offset:
+    url_params['offset'] = options.offset;
 if options.term:
   url_params['term'] = options.term
 if options.location:
@@ -121,7 +123,9 @@ def request(host, path, url_params, consumer_key, consumer_secret, token, token_
   return response
 
 def show_location(loc):
-    print "\tlocation:   {0},{1},{2}".format(loc["city"],loc["postal_code"],loc["address"][0])
+    #if("city" in loc and "postal_code" in loc and "address"  in loc):
+    print "\tlocation:   {0},{1},{2}".format(loc["city"],loc["postal_code"],
+            loc["address"][0]  if (len(loc["address"])>0) else "")
 
 def show_cate(cate):
     sys.stdout.write("\tCategories:")
@@ -139,12 +143,8 @@ def show_neighbor(nb):
     sys.stdout.write("\n")
 
 
-
-response = request(options.host, '/v2/search', url_params, options.consumer_key, options.consumer_secret, options.token, options.token_secret)
-cnt = 1;
-for busi in response["businesses"]:
-     print "#{0}---{1}".format(cnt,busi["id"])
-     cnt += 1
+def print_one_busi(busi,offset):
+     print "#{0}---{1}".format(offset,busi["id"])
      if "categories" in busi:
          show_cate(busi["categories"])
      show_location(busi["location"])
@@ -152,6 +152,25 @@ for busi in response["businesses"]:
      if "neighborhoods" in busi["location"]:
          show_neighbor(busi["location"]["neighborhoods"])
      print "\tcomment:   {0}:".format(busi["snippet_text"])
+
+
+def print_multi_busi(offset):
+    url_params['offset'] = offset
+    url_params['limit'] = 20
+    _DEBUG=True
+    response = request(options.host, '/v2/search', url_params, options.consumer_key, options.consumer_secret, options.token, options.token_secret)
+    if(response and len(response["businesses"])>0):
+        for busi in response["businesses"]:
+            print_one_busi(busi,offset)
+            offset += 1
+    return len(response["businesses"])
+
+
+
+offset = 1;
+while( print_multi_busi(offset) >0 ):
+   offset += 20;
+
 
 #print json.dumps(response, sort_keys=True, indent=2)
 
