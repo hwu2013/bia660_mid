@@ -25,6 +25,7 @@ parser.add_option('-i', '--current_location', dest='current_location', help='Cur
 
 parser.add_option('-o', '--offset', dest='offset', help='Offset (starting position)')
 parser.add_option('-r', '--limit', dest='limit', help='Limit (number of results to return)')
+parser.add_option('-x', '--maxrow', dest='maxrow', help='Maxrow (max number of results to return)')
 parser.add_option('-u', '--cc', dest='cc', help='Country code')
 parser.add_option('-n', '--lang', dest='lang', help='Language code')
 
@@ -56,6 +57,7 @@ options.token_secret    = "LrRVEVOIpnZ6CGwFKEHCz9W0-xA"
 if not options.location and not options.bounds and not options.point:
   parser.error('--location, --bounds, or --point required')
 
+maxrow = 999999;
 # Setup URL params from options
 url_params = {}
 if options.offset:
@@ -72,6 +74,8 @@ if options.offset:
   url_params['offset'] = options.offset
 if options.limit:
   url_params['limit'] = options.limit
+if options.maxrow:
+  maxrow = int(options.maxrow)
 if options.cc:
   url_params['cc'] = options.cc
 if options.lang:
@@ -161,14 +165,17 @@ def print_multi_busi(offset):
     response = request(options.host, '/v2/search', url_params, options.consumer_key, options.consumer_secret, options.token, options.token_secret)
     if(response and len(response["businesses"])>0):
         for busi in response["businesses"]:
+            if offset > maxrow:
+                sys.exit()
             print_one_busi(busi,offset)
             offset += 1
     return len(response["businesses"])
 
 
 
+print "-------------------------------------",maxrow
 offset = 1;
-while( print_multi_busi(offset) >0 ):
+while( print_multi_busi(offset) >0  and  offset<=maxrow):
    offset += 20;
 
 
