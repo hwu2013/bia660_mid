@@ -7,6 +7,7 @@ import urllib
 import urllib2
 import sys
 
+outfile = open("./output.log", 'w')
 parser = optparse.OptionParser()
 """
 parser.add_option('-c', '--consumer_key', dest='consumer_key', help='OAuth consumer key (REQUIRED)')
@@ -128,34 +129,35 @@ def request(host, path, url_params, consumer_key, consumer_secret, token, token_
 
 def show_location(loc):
     #if("city" in loc and "postal_code" in loc and "address"  in loc):
-    print "\tlocation:   {0},{1},{2}".format(loc["city"],loc["postal_code"],
-            loc["address"][0]  if (len(loc["address"])>0) else "")
+    outfile.write("\tlocation:   {0},{1},{2}\n".format(loc["city"],loc["postal_code"],
+            loc["address"][0]  if (len(loc["address"])>0) else ""))
 
 def show_cate(cate):
-    sys.stdout.write("\tCategories:")
+    outfile.write("\tCategories:")
     for elem in cate:
         for subelem in elem:
-            sys.stdout.write(subelem);
-            sys.stdout.write(",")
-    sys.stdout.write("\n")
+            outfile.write(subelem);
+            outfile.write(",")
+    outfile.write("\n")
 
 def show_neighbor(nb):
-    sys.stdout.write("\tNeighbors:   ")
+    outfile.write("\tNeighbors:   ")
     for elem in nb:
-        sys.stdout.write(elem);
-        sys.stdout.write(",")
-    sys.stdout.write("\n")
+        outfile.write(elem);
+        outfile.write(",")
+    outfile.write("\n")
 
 
 def print_one_busi(busi,offset):
-     print "#{0}---{1}".format(offset,busi["id"])
+     outfile.write("\n#{0}---{1}\n".format(offset,busi["id"]))
+     outfile.write("\turl:{0}\n".format(busi["url"]))
      if "categories" in busi:
          show_cate(busi["categories"])
      show_location(busi["location"])
-     print "\tname:      {0}, rating:{1}, review_count:{2}".format(busi["name"],busi["rating"],busi["review_count"])
+     outfile.write("\tname:      {0}, rating:{1}, review_count:{2}".format(busi["name"],busi["rating"],busi["review_count"]))
      if "neighborhoods" in busi["location"]:
          show_neighbor(busi["location"]["neighborhoods"])
-     print "\tcomment:   {0}:".format(busi["snippet_text"])
+     outfile.write("\tcomment:   {0}\n:".format(busi["snippet_text"]))
 
 
 def print_multi_busi(offset):
@@ -164,6 +166,7 @@ def print_multi_busi(offset):
     _DEBUG=True
     response = request(options.host, '/v2/search', url_params, options.consumer_key, options.consumer_secret, options.token, options.token_secret)
     if(response and len(response["businesses"])>0):
+        #print response //for debug
         for busi in response["businesses"]:
             if offset > maxrow:
                 sys.exit()
@@ -173,7 +176,6 @@ def print_multi_busi(offset):
 
 
 
-print "-------------------------------------",maxrow
 offset = 1;
 while( print_multi_busi(offset) >0  and  offset<=maxrow):
    offset += 20;
