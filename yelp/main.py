@@ -160,20 +160,20 @@ def print_one_busi(busi,offset):
      outfile.write(u"\tcomment:   {0}\n:".format(busi["snippet_text"]))
 
 
-def print_multi_busi(offset):
-    print "---------------------------------------------",offset,maxrow
-    url_params['offset'] = offset
+def print_multi_busi(off):
+    print "---------------------------------------------",off,maxrow
+    url_params['off'] = off
     url_params['limit'] = 20
     _DEBUG=True
     response = request(options.host, '/v2/search', url_params, options.consumer_key, options.consumer_secret, options.token, options.token_secret)
     if(response and len(response["businesses"])>0):
         #print response //for debug
         for busi in response["businesses"]:
-            if offset > maxrow:
-                print "-----------------------error"
+            if off > maxrow:
+                print "log write to ./output.log"
                 sys.exit()
-            print_one_busi(busi,offset)
-            offset += 1
+            print_one_busi(busi,off)
+            off += 1
     return len(response["businesses"])
 
 
