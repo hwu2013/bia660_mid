@@ -140,6 +140,16 @@ def show_cate(cate):
             outfile.write(",")
     outfile.write("\n")
 
+def get_cate(cate):
+    catstr = u"\tCategories:"
+    for elem in cate:
+        for subelem in elem:
+            catstr +=subelem
+            catstr += ","
+    catstr+="\n"
+    return catstr
+
+
 def show_neighbor(nb):
     outfile.write(u"\tNeighbors:   ")
     for elem in nb:
@@ -149,6 +159,18 @@ def show_neighbor(nb):
 
 
 def print_one_busi(busi,offset):
+     outstr = "\n#{0}---{1}".format(offset,busi["id"])
+     if "categories" in busi:
+         catstr = get_cate(busi["categories"]).upper()
+         print catstr
+         if "estate".upper() in catstr:
+            #show_location(busi["location"])
+            #outfile.write(u"rating:{0}, review_count:{1}\n".format(busi["rating"],busi["review_count"]))
+            outstr += u", rating:{0}, review_count:{1}\n".format(busi["rating"],busi["review_count"])
+            outfile.write(outstr)
+            outfile.write(catstr)
+
+"""
      outfile.write(u"\n#{0}---{1}\n".format(offset,busi["id"]))
      outfile.write(u"\turl:{0}\n".format(busi["url"]))
      if "categories" in busi:
@@ -159,7 +181,7 @@ def print_one_busi(busi,offset):
          show_neighbor(busi["location"]["neighborhoods"])
      if "snippet_text" in busi:
          outfile.write(u"\tcomment:   {0}\n:".format(busi["snippet_text"]))
-
+"""
 
 def print_multi_busi(off):
     print "---------------------------------------------",off,maxrow
