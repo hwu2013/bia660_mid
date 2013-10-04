@@ -129,11 +129,11 @@ def request(host, path, url_params, consumer_key, consumer_secret, token, token_
 
 def show_location(loc):
     #if("city" in loc and "postal_code" in loc and "address"  in loc):
-    outfile.write("\tlocation:   {0},{1},{2}\n".format(loc["city"],loc["postal_code"],
+    outfile.write(u"\tlocation:   {0},{1},{2}\n".format(loc["city"],loc["postal_code"],
             loc["address"][0]  if (len(loc["address"])>0) else ""))
 
 def show_cate(cate):
-    outfile.write("\tCategories:")
+    outfile.write(u"\tCategories:")
     for elem in cate:
         for subelem in elem:
             outfile.write(subelem);
@@ -141,7 +141,7 @@ def show_cate(cate):
     outfile.write("\n")
 
 def show_neighbor(nb):
-    outfile.write("\tNeighbors:   ")
+    outfile.write(u"\tNeighbors:   ")
     for elem in nb:
         outfile.write(elem);
         outfile.write(",")
@@ -149,18 +149,19 @@ def show_neighbor(nb):
 
 
 def print_one_busi(busi,offset):
-     outfile.write("\n#{0}---{1}\n".format(offset,busi["id"]))
-     outfile.write("\turl:{0}\n".format(busi["url"]))
+     outfile.write(u"\n#{0}---{1}\n".format(offset,busi["id"]))
+     outfile.write(u"\turl:{0}\n".format(busi["url"]))
      if "categories" in busi:
          show_cate(busi["categories"])
      show_location(busi["location"])
-     outfile.write("\tname:      {0}, rating:{1}, review_count:{2}".format(busi["name"],busi["rating"],busi["review_count"]))
+     outfile.write(u"\tname:      {0}, rating:{1}, review_count:{2}\n".format(busi["name"],busi["rating"],busi["review_count"]))
      if "neighborhoods" in busi["location"]:
          show_neighbor(busi["location"]["neighborhoods"])
-     outfile.write("\tcomment:   {0}\n:".format(busi["snippet_text"]))
+     outfile.write(u"\tcomment:   {0}\n:".format(busi["snippet_text"]))
 
 
 def print_multi_busi(offset):
+    print "---------------------------------------------",offset,maxrow
     url_params['offset'] = offset
     url_params['limit'] = 20
     _DEBUG=True
@@ -169,6 +170,7 @@ def print_multi_busi(offset):
         #print response //for debug
         for busi in response["businesses"]:
             if offset > maxrow:
+                print "-----------------------error"
                 sys.exit()
             print_one_busi(busi,offset)
             offset += 1

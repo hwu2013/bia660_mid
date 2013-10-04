@@ -13,13 +13,14 @@ t = Twitter(auth=OAuth(OAUTH_TOKEN,OAUTH_SECRET,CONSUMER_TOKEN,CONSUMER_SECRET))
 # <codecell>
 
 #jstr = t.statuses.retweets_of_me()
-search_result = t.search.tweets(q="century 21 :(",lang="en",count = 20)
+search_result = t.search.tweets(q="cvs :(",lang="en",count = 10,max_id="384815208189132800")
 
 # <codecell>
 
 #print search_result;
 for tweet in search_result["statuses"]:
     if "text" in tweet:
+        print tweet['id_str']
         print tweet['text']
 # <codecell>
 
