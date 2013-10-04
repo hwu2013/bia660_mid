@@ -7,7 +7,6 @@ import urllib
 import urllib2
 import sys
 
-outfile = open("./output.log", 'w')
 parser = optparse.OptionParser()
 """
 parser.add_option('-c', '--consumer_key', dest='consumer_key', help='OAuth consumer key (REQUIRED)')
@@ -34,6 +33,7 @@ parser.add_option('-d', '--radius', dest='radius', help='Radius filter (in meter
 parser.add_option('-g', '--category', dest='category', help='Category filter')
 parser.add_option('-z', '--deals', dest='deals', help='Deals filter')
 parser.add_option('-m', '--sort', dest='sort', help='Sort')
+parser.add_option('-f', '--writeto', dest='writeto', help='write to')
 
 
 options, args = parser.parse_args()
@@ -53,6 +53,9 @@ options.consumer_key    = "0pYQvAy9JQoRiZTpEFiPLg"
 options.consumer_secret = "-01DmjuOQeHjQdRJnUWvuRe1pz0"
 options.token           = "kTYK94YSSF9jPZiOVvpttf5fZx9PtxAa"
 options.token_secret    = "LrRVEVOIpnZ6CGwFKEHCz9W0-xA"
+
+if not options.writeto:
+  parser.error('--writeto required')
 
 
 if not options.location and not options.bounds and not options.point:
@@ -92,6 +95,7 @@ if options.deals:
 if options.sort:
   url_params['sort'] = options.sort
 
+outfile = open(options.writeto, 'w')
 
 def request(host, path, url_params, consumer_key, consumer_secret, token, token_secret):
   """Returns response for API request."""
@@ -189,6 +193,18 @@ def print_multi_busi(off):
     url_params['limit'] = 20
     _DEBUG=True
     response = request(options.host, '/v2/search', url_params, options.consumer_key, options.consumer_secret, options.token, options.token_secret)
+    if(response and "businesses" in response and len(response["businesses"])>0):
+        #print response //for debug
+        for busi in response["businesses"]:
+            if off > maxrow:
+                print "log write to ./output.log"
+                sys.exit()
+            print_one_busi(busi,off)
+            off += 1
+        return len(response["businesses"])
+    else:
+        return 0
+"""
     if(response and len(response["businesses"])>0):
         #print response //for debug
         for busi in response["businesses"]:
@@ -198,6 +214,8 @@ def print_multi_busi(off):
             print_one_busi(busi,off)
             off += 1
     return len(response["businesses"])
+"""
+
 
 
 
