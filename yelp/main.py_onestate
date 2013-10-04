@@ -55,8 +55,8 @@ options.token           = "kTYK94YSSF9jPZiOVvpttf5fZx9PtxAa"
 options.token_secret    = "LrRVEVOIpnZ6CGwFKEHCz9W0-xA"
 
 
-#if not options.location and not options.bounds and not options.point:
-#  parser.error('--location, --bounds, or --point required')
+if not options.location and not options.bounds and not options.point:
+  parser.error('--location, --bounds, or --point required')
 
 maxrow = 999999;
 # Setup URL params from options
@@ -132,14 +132,13 @@ def show_location(loc):
     outfile.write(u"\tlocation:   {0},{1},{2}\n".format(loc["city"],loc["postal_code"],
             loc["address"][0]  if (len(loc["address"])>0) else ""))
 
-def get_cate(cate):
-    catstr = u"\tCategories:"
+def show_cate(cate):
+    outfile.write(u"\tCategories:")
     for elem in cate:
         for subelem in elem:
-            catstr +=subelem
-            catstr += ","
-    catstr+="\n"
-    return catstr
+            outfile.write(subelem);
+            outfile.write(",")
+    outfile.write("\n")
 
 def show_neighbor(nb):
     outfile.write(u"\tNeighbors:   ")
@@ -150,21 +149,16 @@ def show_neighbor(nb):
 
 
 def print_one_busi(busi,offset):
-     outstr = "\n#{0}---{1}".format(offset,busi["id"])
-     #outfile.write(u"\n#{0}---{1}\n".format(offset,busi["id"]))
-     #outfile.write(u"\turl:{0}\n".format(busi["url"]))
-     if "categories" in busi :
-         s = get_cate(busi["categories"]).upper()
-         print s
-         if "estate".upper() in s:
-            #show_location(busi["location"])
-            #outfile.write(u"rating:{0}, review_count:{1}\n".format(busi["rating"],busi["review_count"]))
-            outstr += u":rating:{0}, review_count:{1}\n".format(busi["rating"],busi["review_count"])
-            outfile.write(outstr)
-     #if "neighborhoods" in busi["location"]:
-     #    show_neighbor(busi["location"]["neighborhoods"])
-     #if "snippet_text" in busi:
-     #    outfile.write(u"\tcomment:   {0}\n:".format(busi["snippet_text"]))
+     outfile.write(u"\n#{0}---{1}\n".format(offset,busi["id"]))
+     outfile.write(u"\turl:{0}\n".format(busi["url"]))
+     if "categories" in busi:
+         show_cate(busi["categories"])
+     show_location(busi["location"])
+     outfile.write(u"\tname:      {0}, rating:{1}, review_count:{2}\n".format(busi["name"],busi["rating"],busi["review_count"]))
+     if "neighborhoods" in busi["location"]:
+         show_neighbor(busi["location"]["neighborhoods"])
+     if "snippet_text" in busi:
+         outfile.write(u"\tcomment:   {0}\n:".format(busi["snippet_text"]))
 
 
 def print_multi_busi(off):
@@ -173,7 +167,7 @@ def print_multi_busi(off):
     url_params['limit'] = 20
     _DEBUG=True
     response = request(options.host, '/v2/search', url_params, options.consumer_key, options.consumer_secret, options.token, options.token_secret)
-    if(response and "businesses" in response and len(response["businesses"])>0):
+    if(response and len(response["businesses"])>0):
         #print response //for debug
         for busi in response["businesses"]:
             if off > maxrow:
@@ -181,22 +175,13 @@ def print_multi_busi(off):
                 sys.exit()
             print_one_busi(busi,off)
             off += 1
-        return len(response["businesses"])
-    else:
-        return 0
+    return len(response["businesses"])
 
 
 
 offset = 1;
-states = ["AL","AK","AS","AZ","AR","CA","CO","CT","DE","DC","FM","FL","GA","GU","HI","ID",
-          "IL","IN","IA","KS","KY","LA","ME","MH","MD","MA","MI","MN","MS","MO","MT","NE",
-          "NV","NH","NJ","NM","NY","NC","ND","MP","OH","OK","OR","PW","PA","PR","RI","SC",
-          "SD","TN","TX","UT","VT","VI","VA","WA","WV","WI","WY",];
-for s in states:
-    url_params['location'] = s
-    outfile.write(s+"\n")
-    while( print_multi_busi(offset) >0  and  offset<=maxrow):
-       offset += 20;
+while( print_multi_busi(offset) >0  and  offset<=maxrow):
+   offset += 20;
 
 
 #print json.dumps(response, sort_keys=True, indent=2)

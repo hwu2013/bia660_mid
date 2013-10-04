@@ -1,4 +1,5 @@
 usage:
 ./main.py --location="nj" --term="century 21"  --maxrow="10"
+$./main.py --term="century 21"  --maxrow="100"
 
 
