@@ -123,7 +123,8 @@ def request(host, path, url_params, consumer_key, consumer_secret, token, token_
   try:
     conn = urllib2.urlopen(signed_url, None)
     try:
-      response = json.loads(conn.read())
+      data = conn.read()
+      response = json.loads(data)
     finally:
       conn.close()
   except urllib2.HTTPError, error:

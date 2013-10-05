@@ -165,6 +165,8 @@ def print_multi_busi(off):
     print "---------------------------------------------",off,maxrow
     url_params['offset'] = off
     url_params['limit'] = 20
+    #url_params['category_filter'] = "realestate"
+
     _DEBUG=True
     response = request(options.host, '/v2/search', url_params, options.consumer_key, options.consumer_secret, options.token, options.token_secret)
     if(response and len(response["businesses"])>0):
