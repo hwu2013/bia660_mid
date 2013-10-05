@@ -164,7 +164,7 @@ def show_neighbor(nb):
 
 
 def print_one_busi(busi,offset):
-     outstr = "\n#{0}---{1}".format(offset,busi["id"])
+     outstr = u"\n#{0}---{1}".format(offset,busi["id"])
      if "categories" in busi:
          catstr = get_cate(busi["categories"]).upper()
          print catstr
