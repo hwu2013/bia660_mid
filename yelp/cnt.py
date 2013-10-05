@@ -33,5 +33,10 @@ for s in states:
             if len(content) != 0:
                 avgreview = totalreview/(len(content)+0.)
                 avgrate = totalrate/(len(content)+0.)
-            print s,"|number:",len(content), "|total review:", totalreview,"|total rate:", totalrate, "|avg review:",avgreview, "|avg rate:",avgrate
+            print 'num:{0:3},treview:{1:6.2f},trate:{2:6.2f},areview:{3:6.2f},arate:{4:6.2f}'.format(len(content),
+                                                                                         totalreview,
+                                                                                         totalrate,
+                                                                                         avgreview,
+                                                                                         avgrate)
+            #print s,"|number:",len(content), "|total review:", totalreview,"|total rate:", totalrate, "|avg review:",avgreview, "|avg rate:",avgrate
 
