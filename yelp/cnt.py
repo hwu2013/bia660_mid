@@ -11,6 +11,13 @@ states = ["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Conne
 
 #        ./main.py_onestate --location="$i" --term="century 21"  --maxrow=1000 --writeto="./output_1/${i}.log"
 
+def sortbyrate(s):
+    pattern=r"arate: *([0-9.]+)$"
+    result = re.search(pattern, s)
+    arate = float(result.group(1))
+    return arate
+
+strlist = []
 for s in states:
     with open(s+".txt_2") as f:
             content = f.readlines()
@@ -33,10 +40,14 @@ for s in states:
             if len(content) != 0:
                 avgreview = totalreview/(len(content)+0.)
                 avgrate = totalrate/(len(content)+0.)
-            print 'num:{0:3},treview:{1:6.2f},trate:{2:6.2f},areview:{3:6.2f},arate:{4:6.2f}'.format(len(content),
+            str1= 'num:{0:3},treview:{1:6.2f},trate:{2:6.2f},areview:{3:6.2f},arate:{4:6.2f}'.format(len(content),
                                                                                          totalreview,
                                                                                          totalrate,
                                                                                          avgreview,
                                                                                          avgrate)
+            strlist.append(str1)
+strlist.sort(key=sortbyrate)
+for e in strlist:
+    print e
             #print s,"|number:",len(content), "|total review:", totalreview,"|total rate:", totalrate, "|avg review:",avgreview, "|avg rate:",avgrate
 
